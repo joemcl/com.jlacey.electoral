@@ -295,7 +295,7 @@ function google_civic_information_city_districts($level, $limit, $update) {
         $divisionDistrict = ''; 
         $divisionParts = explode('/', str_replace($cityDivision . '/', '', $divisionKey));
         if(substr($divisionParts[0], 0, 5) == 'place' &&
-           substr($divisionParts[1], 0, 16) == 'council_district' &&
+           substr($divisionParts[1], 0, 16) == 'ward' &&
            in_array(substr($divisionParts[0], 6), $cities)) {
            
           $city = ucwords(substr($divisionParts[0], 6));
